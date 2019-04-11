@@ -24,4 +24,6 @@ mate-session &
 
 FAQ：
 
+https://bgpgeek.com/install-vnc-with-xfce/
+
 http://www.voidcn.com/article/p-fguethet-bke.html
