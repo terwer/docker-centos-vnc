@@ -19,7 +19,10 @@ setup
 # /etc/X11/xinit/xinitrc
 # vncserver -kill $DISPLAY
 
-mate-session &
+# mate-session &
+
+xrdb $HOME/.Xresources
+startxfce4 &
 ```
 
 FAQ：
