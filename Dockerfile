@@ -5,8 +5,7 @@ LABEL maintainer="Terwer Green <cbgtyw@gmail.com>"
 
 ### Envrionment config
 ENV TZ=Asia/Shanghai \
-    TZ=CST-8 \
-    USER=terwer
+    TZ=CST-8
 
 # 添加网易源
 RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup \
@@ -19,10 +18,10 @@ RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backu
 
 # 安装桌面及开发工具
 # Install various packages to get compile environment
+# note:not install mate-desktop because of splash screen `yum groupinstall "MATE Desktop" -y`
 RUN yum install epel-release -y \
     && yum groupinstall "Server with GUI" -y \
     && yum groupinstall "Development Tools" -y \ 
-    && yum groupinstall "MATE Desktop" -y \ 
     && yum groupinstall "X Window System" -y \
     && yum groupinstall xfce -y \
     && yum install pixman pixman-devel libXfont -y \
