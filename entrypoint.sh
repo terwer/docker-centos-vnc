@@ -1,15 +1,17 @@
 # 关闭VNC
-chmod 777 /tmp
-rm /tmp/.X1-lock
-if [ -d ~/.vnc ]; then
- vncserver -kill :1
- rm ~/.vnc/*.pid
- rm ~/.vnc/*.log
-fi
+# vncserver -kill :1
+
+# 创建用户
+# useradd -m -g root terwer
+# visudo
+# passwd terwer
+# passwd
 
 # 启动VNCServer
+# docker exec -it docker-centos bash
 # vncserver :1 -geometry 800x600 -depth 24 -SecurityTypes None
-vncserver -SecurityTypes None
+# vncserver -SecurityTypes None
+# vncserver
 
 echo "finished."
 bash

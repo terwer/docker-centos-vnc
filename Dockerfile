@@ -19,13 +19,13 @@ RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backu
 
 # 安装桌面及开发工具
 # Install various packages to get compile environment
-# "MATE Desktop" is an environment group which should only be used for initial system installation. "MATE", or "mate-desktop", is the desktop group that should be used to install the desktop on an installed system.
-# see https://bugzilla.redhat.com/show_bug.cgi?id=1579397
 RUN yum install epel-release -y \
     && yum groupinstall "Server with GUI" -y \
     && yum groupinstall "Development Tools" -y \ 
     && yum groupinstall "MATE Desktop" -y \ 
     && yum groupinstall "X Window System" -y \
+    && yum groupinstall xfce -y \
+    && yum install pixman pixman-devel libXfont -y \
     && yum install tigervnc-server -y 
 
 # 容器入口
