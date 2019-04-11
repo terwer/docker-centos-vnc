@@ -1,0 +1,43 @@
+[ 1554979932.476365]: IMSettings-Daemon[110]: INFO: Starting imsettings-daemon...
+[ 1554979932.482010]: IMSettings-Daemon[110]: INFO:   [HOME=/root/.config/imsettings]
+[ 1554979932.488687]: IMSettings-Daemon[110]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
+[ 1554979932.495378]: IMSettings-Daemon[110]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
+
+[ 1554979932.502147]: IMSettings-Daemon[110]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
+
+[ 1554979932.508489]: IMSettings-Daemon[110]: INFO:   [MODULES=gsettings]
+
+imsettings information
+==========================
+XINPUTRC: /etc/X11/xinit/xinput.d//none.conf
+	  File: ‘/etc/X11/xinit/xinput.d//none.conf’
+	  Size: 110       	Blocks: 8          IO Block: 4096   regular file
+	Device: 801h/2049d	Inode: 2368474     Links: 1
+	Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+	Access: 2018-10-31 03:42:37.000000000 +0800
+	Modify: 2018-10-31 03:42:37.000000000 +0800
+	Change: 2019-04-11 18:34:14.867733500 +0800
+	 Birth: -
+Is DBus enabled: yes
+Is imsettings enabled: yes
+Is GTK+ supported: no
+Is Qt supported: no
+DESKTOP: unknown
+GUESS_DESKTOP: 
+DISABLE_IMSETTINGS: 
+IMSETTINGS_DISABLE_DESKTOP_CHECK: 
+DBUS_SESSION_BUS_ADDRESS: unix:abstract=/tmp/dbus-mx8PmTK1FB,guid=4d457c652b74ca05bdf847e05caf1c5c
+GTK_IM_MODULE: gtk-im-context-simple
+QT_IM_MODULE: xim
+XMODIFIERS: @im=none
+IMSETTINGS_MODULE: none
+IMSETTINGS_INTEGRATE_DESKTOP: yes
+
+[ 1554979933.698398]: IMSettings-Daemon[110]: INFO: Release the ownership of com.redhat.imsettings
+
+
+[ 1554979933.715688]: GLib-GIO[110]: CRITICAL **: Error while sending AddMatch() message: The connection is closed
+
+[ 1554979933.724131]: GLib-GIO[110]: CRITICAL **: Error while sending AddMatch() message: The connection is closed
+[ 1554979933.730958]: IMSettings-Daemon[110]: INFO: Unloading imesttings module: gsettings
+[ 1554979933.737590]: IMSettings-Daemon[110]: INFO: imsettings-daemon is shut down.
