@@ -4,14 +4,13 @@ FROM centos:centos7
 LABEL maintainer="Terwer Green <cbgtyw@gmail.com>"
 
 ### Envrionment config
-ENV LANG=C.UTF-8 \
-    TZ=Asia/Shanghai \
+ENV TZ=Asia/Shanghai \
     TZ=CST-8 \
     USER=terwer
 
-# 添加阿里云源
-RUN rm -rf /etc/yum.repos.d/* \
-    && curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo \
+# 添加网易源
+RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup \
+    && curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo \
     && yum clean all \
     && yum makecache \
     && yum update -y \
@@ -19,12 +18,11 @@ RUN rm -rf /etc/yum.repos.d/* \
 && echo "mirror set finished."
 
 # 创建用户
-RUN useradd -m -g root terwer \
-    && echo "$USER:123456" | chpasswd
-
-# 安装mate-desktop、VNC
-RUN yum groups install "MATE Desktop" -y \
-    && yum groups install "X Window System" -y \
+# Install various packages to get compile environment
+# "MATE Desktop" is an environment group which should only be used for initial system installation. "MATE", or "mate-desktop", is the desktop group that should be used to install the desktop on an installed system.
+# see https://bugzilla.redhat.com/show_bug.cgi?id=1579397
+RUN yum install epel-release -y \
+    && yum groupinstall "Server with GUI" -y \
     && yum install tigervnc-server -y
 
 # 容器入口
