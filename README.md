@@ -21,3 +21,7 @@ setup
 
 mate-session &
 ```
+
+FAQ：
+
+http://www.voidcn.com/article/p-fguethet-bke.html
