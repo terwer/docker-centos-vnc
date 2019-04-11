@@ -1,3 +1,8 @@
+# docker exec -it [id] bash
+# yum -y groupinstall "Development Tools" 
+# yum -y groupinstall "MATE Desktop" 
+# yum -y groupinstall "X Window System" 
+
 # 关闭VNC
 chmod 777 /tmp
 rm /tmp/.X1-lock
