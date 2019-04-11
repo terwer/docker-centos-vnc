@@ -1,9 +1,9 @@
-USER=terwer
+# USER=terwer
 
 # 创建用户
-useradd -m -g root terwer
+# useradd -m -g root $USER
 # visudo
-# passwd terwer
+# passwd $USER
 # passwd
 
 # 关闭VNC
