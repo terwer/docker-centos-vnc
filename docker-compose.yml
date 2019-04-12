@@ -2,6 +2,7 @@ version: '3'
 services:
   docker-centos-vnc:
     privileged: true
+    tty: true
     image: terwer/centos:7
     container_name: docker-centos
     build:
