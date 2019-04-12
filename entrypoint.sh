@@ -19,8 +19,11 @@
 # passwd $USER
 # passwd
 
-# 安装firefox
-# yum -y install firefox
+# 安装zsh
+# yum install zsh -y
+# sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# plugins=(git zsh-syntax-highlighting)
 
 # 关闭VNC
 # vncserver -kill :1
