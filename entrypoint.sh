@@ -1,5 +1,9 @@
 # export USER=terwer
 
+# 升级git2
+# curl https://setup.ius.io | sh
+# yum remove -y git | yum -y install git2u
+
 # docker exec -it docker-centos bash
 
 # 设置Xfce中文显示(not working)
