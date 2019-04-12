@@ -11,7 +11,5 @@ services:
     ports:
       - 5901:5901
     volumes:
-      - ./home:/home
-      - ./root:/root
-      - ./tmp/:/tmp
+      - ./share:/share
       - ./sys/fs/cgroup:/sys/fs/cgroup:ro
