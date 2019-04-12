@@ -1,12 +1,15 @@
 # export USER=terwer
 
+# 安装其他工具
 # yum -y install sudo
 # yum -y install vim
 # yum -y groupinstall "fonts" 
 # yum -y install net-tools
+# yum -y install wget
+
 # docker exec -it docker-centos bash
 
-# 设置Xfce中文显示
+# 设置Xfce中文显示(not working)
 # vim /etc/locale.conf
 # LANG="zh_CN.UTF-8"
 
@@ -16,10 +19,8 @@
 # passwd $USER
 # passwd
 
-# 安装Chrome
-# cd /home/$USER/Downloads
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-# rpm -ivh *.rpm
+# 安装firefox
+# yum -y install firefox
 
 # 关闭VNC
 # vncserver -kill :1
