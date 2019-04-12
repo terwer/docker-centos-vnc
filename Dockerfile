@@ -34,6 +34,16 @@ RUN yum install epel-release -y \
     && yum clean all \
 && echo "install basic tools and desktop environment success."
 
+# 安装其他工具包
+RUN yum -y install sudo \
+    && yum -y install vim \
+    && yum -y groupinstall "fonts" \
+    && yum -y install net-tools \
+    && yum -y install wget \
+    && yum install zsh -y \
+    && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" \
+&& echo "install other tools success."
+
 # 容器入口
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

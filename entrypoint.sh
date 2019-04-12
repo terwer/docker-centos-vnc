@@ -1,12 +1,5 @@
 # export USER=terwer
 
-# 安装其他工具
-# yum -y install sudo
-# yum -y install vim
-# yum -y groupinstall "fonts" 
-# yum -y install net-tools
-# yum -y install wget
-
 # docker exec -it docker-centos bash
 
 # 设置Xfce中文显示(not working)
@@ -19,9 +12,7 @@
 # passwd $USER
 # passwd
 
-# 安装zsh
-# yum install zsh -y
-# sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# 安装zsh-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # plugins=(git zsh-syntax-highlighting)
 
