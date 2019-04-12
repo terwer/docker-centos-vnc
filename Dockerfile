@@ -14,7 +14,7 @@ RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backu
     && yum makecache \
     && yum update -y \
     && yum upgrade -y \
-    && yum clean all -y \
+    && yum clean all \
 && echo "mirror set finished."
 
 # 安装桌面及开发工具
@@ -28,10 +28,10 @@ RUN yum install epel-release -y \
     && yum groupinstall xfce -y \
     && yum install pixman pixman-devel libXfont -y \
     && yum install tigervnc-server -y \
-    && yum install ibus.x86_64 \
-    && yum install ibus-libpinyin.x86_64 \
-    && yum install im-chooser.x86_64 \
-    && yum clean all -y \
+    && yum install ibus.x86_64 -y \
+    && yum install ibus-libpinyin.x86_64 -y \
+    && yum install im-chooser.x86_64 -y \
+    && yum clean all \
 && echo "install basic tools and desktop environment success."
 
 # 容器入口
