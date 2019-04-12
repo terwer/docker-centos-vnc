@@ -23,6 +23,6 @@
 # vncserver :1 -geometry 800x600 -depth 24 -SecurityTypes None
 # vncserver -SecurityTypes None
 # vncserver
-
+  
 echo "finished."
 bash
