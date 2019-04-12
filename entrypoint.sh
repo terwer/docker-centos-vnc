@@ -1,4 +1,4 @@
-# USER=terwer
+# export USER=terwer
 
 # docker exec -it docker-centos bash
 
@@ -13,7 +13,7 @@
 # passwd
 
 # 安装Chrome
-# cd /home/terwer/Downloads
+# cd /home/$USER/Downloads
 # wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 # rpm -ivh *.rpm
 
