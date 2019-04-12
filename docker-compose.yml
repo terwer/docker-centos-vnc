@@ -1,8 +1,7 @@
 version: '3'
 services:
   docker-centos-vnc:
-    stdin_open: true
-    tty: true
+    privileged: true
     image: terwer/centos:7
     container_name: docker-centos
     build:
@@ -11,6 +10,7 @@ services:
     ports:
       - 5901:5901
     volumes:
-      - ./home:/home/
-      - ./root:/root/
-      - ./tmp/:/tmp/
+      - ./home:/home
+      - ./root:/root
+      - ./tmp/:/tmp
+      - ./sys/fs/cgroup:/sys/fs/cgroup:ro

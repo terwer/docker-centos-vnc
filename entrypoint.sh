@@ -2,6 +2,10 @@
 
 # docker exec -it docker-centos bash
 
+# 设置Xfce中文显示
+# vim /etc/locale.conf
+# LANG=zh_CN.UTF-8
+
 # 创建用户
 # useradd -m -g root $USER
 # visudo
