@@ -1,10 +1,14 @@
 # export USER=terwer
 
+# yum -y install sudo
+# yum -y install vim
+# yum -y groupinstall "fonts" 
+# yum -y install net-tools
 # docker exec -it docker-centos bash
 
 # 设置Xfce中文显示
 # vim /etc/locale.conf
-# LANG=zh_CN.UTF-8
+# LANG="zh_CN.UTF-8"
 
 # 创建用户
 # useradd -m -g root $USER
