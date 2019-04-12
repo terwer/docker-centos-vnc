@@ -12,6 +12,11 @@
 # passwd $USER
 # passwd
 
+# 安装Chrome
+# cd /home/terwer/Downloads
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+# rpm -ivh *.rpm
+
 # 关闭VNC
 # vncserver -kill :1
 # 启动VNCServer
