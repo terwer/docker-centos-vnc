@@ -35,13 +35,14 @@ RUN yum install epel-release -y \
 && echo "install basic tools and desktop environment success."
 
 # 安装其他工具包
+# 升级git2
 RUN yum -y install sudo \
     && yum -y install vim \
     && yum -y groupinstall "fonts" \
     && yum -y install net-tools \
-    && yum -y install wget \
-    && yum install zsh -y \
-    && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" \
+    && yum -y install wget \ 
+    && curl https://setup.ius.io | sh \
+    && yum remove -y git | yum -y install git2u \
 && echo "install other tools success."
 
 # 容器入口
