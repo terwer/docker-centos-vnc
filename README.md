@@ -1,4 +1,4 @@
-# docker-centos-mate-vnc
+# docker-centos-vnc
 Docker buid for centos with vnc
 
 # VNC help
