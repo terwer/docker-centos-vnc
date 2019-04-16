@@ -14,13 +14,6 @@ setup
 ```
 #!/bin/sh
 
-# unset SESSION_MANAGER
-# unset DBUS_SESSION_BUS_ADDRESS
-# /etc/X11/xinit/xinitrc
-# vncserver -kill $DISPLAY
-
-# mate-session &
-
 xrdb $HOME/.Xresources
 startxfce4 &
 ```
