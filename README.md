@@ -1,6 +1,10 @@
 # docker-centos-vnc
 Docker buid for centos with vnc
 
+**Note，This repo is not maintained， see my new project**
+
+[https://github.com/terwer/portable-centos-7-workstation](https://github.com/terwer/portable-centos-7-workstation)
+
 # VNC help
 
 open xstartup
